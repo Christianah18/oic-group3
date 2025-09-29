@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../image/Lagodo.jpg);
+    background: linear-gradient() rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    line-height: 1.6;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 11%;
+}
+.navbar .logo{
+    font-family: 1.5rem;
+    font-weight: bolder;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+.navbar ul li a {
+    color: #6281b3;
+}
+.navbar .bars{
+    display: flex;
+    gap: 1rem;
+}
+.navbar .bars a{
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+.navbar .bars .login{
+    color: white;
+}
+.navbar .bars .signup{
+    background-color: #4681e0;
+    color: white;
+}
+.first{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    color: white;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3rem 100%;
+}
+.first-text{
+    align-self: center;
+    flex: 1;
+    padding-left: 10%;
+    min-width: 300px;
+}
+.first-text h4{
+    font-size: 1.0rem;
+    color: rgba(245, 245, 245, 0.753);
+    margin-bottom: 4rem;
+}
+.first-text h1{
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.first-text p{
+    font-size: 1.0rem;
+    color: rgba(245, 245, 245, 0.753);
+    margin-bottom: 1.7rem;
+}
+.first-button{
+    display: flex;
+    gap: 1rem;
+}
+.first-button a{
+    font-weight: bolder;
+    padding: 0.8rem 1.6rem;
+    border-radius: 7px;
+}
+.btn-one{
+    background-color: rgba(2, 2, 113, 0.896);
+    color: white;
+}
+.btn-two{
+    border: 1px solid #555;
+    color: white;
+}
+.footer{
+    margin: 3rem 0rem;
+    text-align: center;
+    color: rgba(245, 245, 245, 0.753);
+}
+/* updated css */
+.designs{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1rem;
+    
+}.designs span{
+    font-size: 1.2rem;
+    color: white;
+}
+@media screen and (max-width: 768px) {
+    body{
+        height: fit-content;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .first{
+        flex-direction: column;
+        text-align: center;
+    }
+    .first-text h1{
+        font-size: 2rem;
+    }
+    .first-button{
+        justify-content: center;
+    }
+}
